@@ -1,0 +1,22 @@
+{
+  "name": "portfoliov1",
+  "version": "1.0.0",
+  "description": "My personal Portfolio (Version 1)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nchomsky/portfolioV1.git"
+  },
+  "author": "Noah Chomsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nchomsky/portfolioV1/issues"
+  },
+  "homepage": "https://github.com/nchomsky/portfolioV1#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

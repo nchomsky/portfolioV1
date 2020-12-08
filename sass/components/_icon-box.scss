@@ -1,8 +1,13 @@
 .icon-box {
   &-item {
-    text-decoration: none;
+    color: $color-2;
+    &:not(:last-child) {
+      padding-right: 1.5rem;
+    }
+
     &:hover {
       cursor: pointer;
+      color: $color-1;
     }
   }
 }

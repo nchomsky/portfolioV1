@@ -1,7 +1,11 @@
 .icon-box {
   &-item {
     color: $color-2-dark;
-    transition: all 0.3s;
+    transition: all 0.4s;
+    overflow: hidden;
+    //Stops the stuttering from happening on icon transitions
+    backface-visibility: hidden;
+
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
@@ -10,25 +14,28 @@
       opacity: 0;
       animation: fadeIn 0.9s ease-out;
       animation-delay: 1.4s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
     &--2 {
       opacity: 0;
       animation: fadeIn 0.9s ease-out;
       animation-delay: 1.8s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
     &--3 {
       opacity: 0;
       animation: fadeIn 0.9s ease-out;
       animation-delay: 2.2s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
 
     &:hover {
       cursor: pointer;
       color: $color-1;
-      transform: translateY(-0.2rem);
+      transform: translateY(-0.3rem);
     }
   }
 }

@@ -27,11 +27,13 @@ body {
 .heading-primary {
   color: #dbe2ef;
   margin-bottom: 1rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .heading-primary--main {
   display: block;
-  font-size: 6rem;
+  font-size: 9rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
   -webkit-animation: fadeDown 1s;
@@ -41,7 +43,7 @@ body {
 }
 
 .heading-primary--sub {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 300;
   letter-spacing: 0.6rem;
   padding-bottom: 0.3rem;
@@ -57,7 +59,7 @@ body {
 }
 
 .heading-primary__icon-box {
-  margin-top: 0.1rem;
+  margin-top: 0.3rem;
   font-size: 4rem;
   display: inline-block;
 }
@@ -108,8 +110,11 @@ body {
 
 .icon-box-item {
   color: #b8c6df;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .icon-box-item:not(:last-child) {
@@ -123,7 +128,7 @@ body {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .icon-box-item--2 {
@@ -133,7 +138,7 @@ body {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .icon-box-item--3 {
@@ -143,14 +148,14 @@ body {
   -webkit-animation-delay: 2.2s;
           animation-delay: 2.2s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .icon-box-item:hover {
   cursor: pointer;
   color: #f9f7f7;
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
 }
 
 .header {

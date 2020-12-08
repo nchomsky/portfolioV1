@@ -20,7 +20,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
+  line-height: 1.2;
   color: #dbe2ef;
 }
 
@@ -34,31 +34,123 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
+  -webkit-animation: fadeDown 1s;
+          animation: fadeDown 1s;
+  padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 .heading-primary--sub {
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.6rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
   border-bottom: 0.1rem solid #dbe2ef;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 .heading-primary__icon-box {
+  margin-top: 0.1rem;
   font-size: 4rem;
+  display: inline-block;
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .icon-box-item {
-  color: #dbe2ef;
+  color: #b8c6df;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .icon-box-item:not(:last-child) {
-  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.icon-box-item--1 {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.9s ease-out;
+          animation: fadeIn 0.9s ease-out;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.icon-box-item--2 {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.9s ease-out;
+          animation: fadeIn 0.9s ease-out;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.icon-box-item--3 {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.9s ease-out;
+          animation: fadeIn 0.9s ease-out;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .icon-box-item:hover {
   cursor: pointer;
   color: #f9f7f7;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 
 .header {

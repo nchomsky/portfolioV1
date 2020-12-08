@@ -2,7 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
+  line-height: 1.2;
   color: $color-2;
 }
 
@@ -15,17 +15,27 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
+    animation: fadeDown 1s;
+    padding-bottom: 1rem;
+    overflow: hidden;
   }
 
   &--sub {
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: 0.6rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     border-bottom: 0.1rem solid $color-2;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 0.85s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
   }
 
   &__icon-box {
+    margin-top: 0.1rem;
     font-size: 4rem;
+    display: inline-block;
   }
 }

@@ -8,7 +8,7 @@ body {
 
 .heading-primary {
   color: $color-1;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 
   &--main {
     display: block;
@@ -23,5 +23,14 @@ body {
     letter-spacing: 0.6rem;
     padding-bottom: 0.5rem;
     border-bottom: 0.1rem solid $color-1;
+  }
+
+  &__icon-box {
+    font-size: 4rem;
+
+    &:visited,
+    &:link {
+      text-decoration: none;
+    }
   }
 }

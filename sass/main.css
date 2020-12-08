@@ -26,7 +26,7 @@ body {
 
 .heading-primary {
   color: #f9f7f7;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 
 .heading-primary--main {
@@ -42,6 +42,22 @@ body {
   letter-spacing: 0.6rem;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid #f9f7f7;
+}
+
+.heading-primary__icon-box {
+  font-size: 4rem;
+}
+
+.heading-primary__icon-box:visited, .heading-primary__icon-box:link {
+  text-decoration: none;
+}
+
+.icon-box-item {
+  text-decoration: none;
+}
+
+.icon-box-item:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -60,16 +76,5 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.header__icon-box {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

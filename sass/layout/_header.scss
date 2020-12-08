@@ -1,0 +1,26 @@
+.header {
+  height: 100vh;
+  //   background-color: $color-4;
+  background-image: linear-gradient(to bottom, $color-4, $color-3);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__icon-box {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+}

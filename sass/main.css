@@ -25,7 +25,7 @@ body {
 }
 
 .heading-primary {
-  color: #dbe2ef;
+  color: #f9f7f7;
   margin-bottom: 1rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -47,7 +47,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.6rem;
   padding-bottom: 0.3rem;
-  border-bottom: 0.1rem solid #dbe2ef;
+  border-bottom: 0.1rem solid #f9f7f7;
   opacity: 0;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
@@ -62,6 +62,52 @@ body {
   margin-top: 0.3rem;
   font-size: 4rem;
   display: inline-block;
+}
+
+.heading-secondary {
+  color: #f9f7f7;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.heading-secondary__button--main {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.6s;
+          animation: fadeIn 0.6s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
+}
+
+.heading-secondary__button--icon {
+  color: #f9f7f7;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.6s;
+          animation: fadeIn 0.6s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-size: 3.5rem;
+  padding-top: 1.5rem;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.heading-secondary__button--icon:hover {
+  -webkit-transform: translateY(0.7rem);
+          transform: translateY(0.7rem);
+}
+
+.heading-secondary:hover .heading-secondary__button--main:not(:hover) {
+  background-color: rgba(249, 247, 247, 0.1);
 }
 
 @-webkit-keyframes fadeDown {
@@ -158,6 +204,32 @@ body {
           transform: translateY(-0.3rem);
 }
 
+.btn {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5rem;
+}
+
+.btn--color-1 {
+  color: #f9f7f7;
+  border: 0.1rem solid #f9f7f7;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn--color-1:hover {
+  background-color: rgba(249, 247, 247, 0.1);
+}
+
+.btn--color-1:hover ~ .icon-header {
+  -webkit-transform: translateY(0.7rem);
+          transform: translateY(0.7rem);
+}
+
+.icon-header ~ .btn--color-1:hover {
+  background-color: rgba(249, 247, 247, 0.1);
+}
+
 .header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#112d4e), to(#3f72af));
@@ -170,6 +242,15 @@ body {
 .header__text-box {
   position: absolute;
   top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__button-box {
+  position: absolute;
+  bottom: 15%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

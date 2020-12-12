@@ -106,10 +106,6 @@ body {
           transform: translateY(0.7rem);
 }
 
-.heading-secondary:hover .heading-secondary__button--main:not(:hover) {
-  background-color: rgba(249, 247, 247, 0.1);
-}
-
 @-webkit-keyframes fadeDown {
   0% {
     opacity: 0;
@@ -255,5 +251,21 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.section-skills {
+  background-color: orangered;
+}
+
+.section-skills__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-skills__skillBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=main.css.map */

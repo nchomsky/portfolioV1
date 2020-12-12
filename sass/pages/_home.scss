@@ -1,0 +1,10 @@
+.section-skills {
+  background-color: orangered;
+  &__grid {
+    display: flex;
+  }
+
+  &__skillBox {
+    flex: 1;
+  }
+}

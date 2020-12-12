@@ -76,7 +76,7 @@ body {
 
   // if hovered and main button is not hovered then set background color of main
   // working but makes selection even if icon is not hovered... trying to fix
-  &:hover &__button--main:not(:hover) {
-    background-color: rgba($color-1, 0.1);
-  }
+  // a:hover &__button--main:not(:hover) {
+  //   background-color: rgba($color-1, 0.1);
+  // }
 }

@@ -16,6 +16,50 @@ body {
           box-sizing: border-box;
 }
 
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -104,50 +148,6 @@ body {
 .heading-secondary__button--icon:hover {
   -webkit-transform: translateY(0.7rem);
           transform: translateY(0.7rem);
-}
-
-@-webkit-keyframes fadeDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes fadeDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .icon-box-item {
@@ -255,17 +255,18 @@ body {
 
 .section-skills {
   background-color: orangered;
+  padding: 10rem 0;
 }
 
-.section-skills__grid {
+.skills__grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.section-skills__skillBox {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.skills__skillBox {
+  background-color: blue;
 }
 /*# sourceMappingURL=main.css.map */

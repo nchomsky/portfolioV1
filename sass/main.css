@@ -16,6 +16,10 @@ body {
           box-sizing: border-box;
 }
 
+.center-text {
+  text-align: center;
+}
+
 @-webkit-keyframes fadeDown {
   0% {
     opacity: 0;
@@ -116,6 +120,7 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
+  text-align: center;
 }
 
 .heading-secondary__button--main {
@@ -150,8 +155,13 @@ body {
           transform: translateY(0.7rem);
 }
 
+.heading-secondary--section {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
 .heading-tertiary {
-  color: #777;
+  color: #333;
   font-size: 3.5rem;
   font-weight: 300;
 }
@@ -243,29 +253,44 @@ body {
   color: #777;
   background-color: #f9f7f7;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
-          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+  width: 30rem;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  overflow: hidden;
+}
+
+.skills__skillBox:hover {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
 }
 
 .skills__heading {
   padding: 2rem;
-  color: #777;
-}
-
-.skills__skillList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  border-bottom: 0.1rem solid #999;
 }
 
 .li {
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.li:not(:last-child) {
+  border-bottom: 0.1rem solid #b8c6df;
+}
+
+.li:hover {
+  color: #dbe2ef;
+  background-color: #112d4e;
 }
 
 .header {
@@ -298,6 +323,11 @@ body {
 .section-skills {
   background-color: #3f72af;
   padding: 10rem 0;
+  overflow: hidden;
+}
+
+.skills__heading {
+  text-align: center;
 }
 
 .skills__grid {
@@ -306,5 +336,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=main.css.map */

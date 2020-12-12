@@ -42,6 +42,13 @@ $color-3: #3f72af;
 $color-4: #112d4e;
 
 //////////////////////////////////
+// Utilities
+
+.center-text {
+  text-align: center;
+}
+
+//////////////////////////////////
 // Animations
 
 @keyframes fadeDown {
@@ -120,6 +127,7 @@ body {
   margin-bottom: 0.5rem;
   backface-visibility: hidden;
   overflow: hidden;
+  text-align: center;
 
   &__button--main {
     opacity: 0;
@@ -150,10 +158,15 @@ body {
   // a:hover &__button--main:not(:hover) {
   //   background-color: rgba($color-1, 0.1);
   // }
+
+  &--section {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
 }
 
 .heading-tertiary {
-  color: $color-grey-dark;
+  color: $color-grey-dark-3;
   font-size: 3.5rem;
   font-weight: 300;
 }

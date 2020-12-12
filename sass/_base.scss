@@ -24,6 +24,12 @@ body {
 
 // Basic Colors
 $color-white: #fff;
+$color-black: black;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
 
 // Color Pallette
 $color-1: #f9f7f7;
@@ -144,4 +150,10 @@ body {
   // a:hover &__button--main:not(:hover) {
   //   background-color: rgba($color-1, 0.1);
   // }
+}
+
+.heading-tertiary {
+  color: $color-grey-dark;
+  font-size: 3.5rem;
+  font-weight: 300;
 }

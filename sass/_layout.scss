@@ -30,17 +30,16 @@
 // Skills Section
 
 .section-skills {
-  background-color: orangered;
+  background-color: $color-3;
   padding: 10rem 0;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
 }
 
 .skills {
   &__grid {
     display: flex;
     justify-content: space-around;
-  }
-
-  &__skillBox {
-    background-color: blue;
   }
 }

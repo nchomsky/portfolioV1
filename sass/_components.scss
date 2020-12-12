@@ -70,3 +70,33 @@
     }
   }
 }
+
+//////////////////////////////////
+// Skill Boxes
+
+.skills {
+  &__skillBox {
+    display: flex;
+    flex-direction: column;
+    color: $color-grey-dark;
+    background-color: $color-1;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1rem rgba($color-black, 0.3);
+  }
+
+  &__heading {
+    padding: 2rem;
+    color: $color-grey-dark;
+  }
+
+  &__skillList {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.li {
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+}

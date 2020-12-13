@@ -51,7 +51,10 @@
 
 .section-skills {
   background-color: $color-3;
+  // Might incorporate later:
+  // background-image: linear-gradient(to bottom, $color-3, $color-2-dark);
   padding: 10rem 0;
+  padding-bottom: 12rem;
   overflow: hidden;
   // display: flex;
   // flex-direction: column;
@@ -74,6 +77,17 @@
       margin-right: 15rem;
     }
   }
+}
+
+//////////////////////////////////
+// Projects Section
+
+.section-projects {
+  background-color: $color-2;
+  color: $color-4;
+  padding: 10rem 0;
+  padding-top: 8rem;
+  overflow: hidden;
 }
 
 //////////////////////////////////

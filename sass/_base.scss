@@ -210,12 +210,22 @@ body {
   text-align: center;
   margin-bottom: 10rem;
 
-  &--section {
-    display: inline-block;
-    font-size: 6rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    border-bottom: 0.1rem solid $color-1;
+  &__section {
+    &--skills {
+      display: inline-block;
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      border-bottom: 0.1rem solid $color-1;
+    }
+
+    &--projects {
+      display: inline-block;
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      border-bottom: 0.1rem solid $color-4;
+    }
   }
 }
 

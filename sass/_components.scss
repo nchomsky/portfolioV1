@@ -138,3 +138,48 @@
     background-color: $color-4;
   }
 }
+
+//////////////////////////////////
+// Footer Section
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__links {
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-grey-light-2;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    top: 100%;
+    left: 0;
+    background-color: $color-1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-0.3rem);
+  }
+}

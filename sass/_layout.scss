@@ -27,6 +27,23 @@
 }
 
 //////////////////////////////////
+// About Section
+
+.section-about {
+  height: 75vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-2, 0.4),
+      rgba($color-2, 0.4)
+    ),
+    url(/img/rmnp-2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+//////////////////////////////////
 // Skills Section
 
 .section-skills {

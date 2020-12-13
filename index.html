@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Noah Chomsky</span>
@@ -32,21 +32,27 @@
             target="_blank"
             class="heading-primary__icon-box icon-box-item icon-box-item--1"
           >
-            <i class="fab fa-linkedin"></i
-          ></a>
+            <svg class="icon icon__linkedin">
+              <use xlink:href="img/sprite.svg#icon-linkedin-square"></use>
+            </svg>
+          </a>
           <a
             href="https://github.com/nchomsky"
             target="_blank"
             class="heading-primary__icon-box icon-box-item icon-box-item--2"
           >
-            <i class="fab fa-github-square"></i
-          ></a>
+            <svg class="icon icon__github">
+              <use xlink:href="img/sprite.svg#icon-github-square"></use>
+            </svg>
+          </a>
           <a
             href="Resources/Noah_Chomsky_Resume.pdf"
             target="_blank"
             class="heading-primary__icon-box icon-box-item icon-box-item--3"
           >
-            <i class="far fa-file"></i>
+            <svg class="icon icon__resume">
+              <use xlink:href="img/sprite.svg#icon-file-text-o"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -59,7 +65,9 @@
             View Projects
           </a>
           <a href="#" class="heading-secondary__button--icon icon-header">
-            <i class="fas fa-chevron-down"></i>
+            <svg class="icon icon__projects">
+              <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+            </svg>
             <!-- <i class="fas fa-angle-double-down"></i> -->
           </a>
         </h2>
@@ -121,6 +129,13 @@
       <section class="section-projects"></section>
     </main>
     <footer class="footer">
+      <div class="footer__icon">
+        <a href="#header" class="icon icon__footer">
+          <svg class="icon icon__projects">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-up"></use>
+          </svg>
+        </a>
+      </div>
       <div class="footer__links">
         <a
           href="https://www.linkedin.com/in/nchomsky/"

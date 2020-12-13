@@ -5,7 +5,6 @@
 
 .icon-box {
   &-item {
-    color: $color-2-dark;
     transition: all 0.4s;
     overflow: hidden;
     //Stops the stuttering from happening on icon transitions
@@ -35,12 +34,6 @@
       animation-delay: 2.2s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
-    }
-
-    &:hover {
-      cursor: pointer;
-      color: $color-1;
-      transform: translateY(-0.3rem);
     }
   }
 }
@@ -147,6 +140,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &__icon {
+    margin-bottom: 2rem;
+  }
 
   &__links {
     font-size: 1.75rem;

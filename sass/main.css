@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -107,7 +108,7 @@ body {
 }
 
 .heading-primary__icon-box {
-  margin-top: 0.3rem;
+  padding-top: 0.4rem;
   font-size: 4rem;
   display: inline-block;
 }
@@ -155,6 +156,46 @@ body {
           transform: translateY(0.7rem);
 }
 
+.icon {
+  height: 5rem;
+  width: 5rem;
+  fill: #b8c6df;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.icon__resume:hover, .icon__linkedin:hover, .icon__github:hover {
+  cursor: pointer;
+  fill: #f9f7f7;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.icon__projects {
+  fill: #f9f7f7;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.icon__footer {
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.icon__footer:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-0.3rem) scale(1.2);
+          transform: translateY(-0.3rem) scale(1.2);
+}
+
 .heading {
   text-align: center;
   margin-bottom: 10rem;
@@ -175,7 +216,6 @@ body {
 }
 
 .icon-box-item {
-  color: #b8c6df;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   overflow: hidden;
@@ -215,13 +255,6 @@ body {
           animation-delay: 2.2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-}
-
-.icon-box-item:hover {
-  cursor: pointer;
-  color: #f9f7f7;
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
 }
 
 .btn {
@@ -328,6 +361,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__icon {
+  margin-bottom: 2rem;
 }
 
 .footer__links {
@@ -464,5 +501,6 @@ body {
 .footer {
   background-color: #333;
   padding: 6rem 0;
+  padding-top: 4rem;
 }
 /*# sourceMappingURL=main.css.map */

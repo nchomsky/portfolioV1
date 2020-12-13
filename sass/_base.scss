@@ -13,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -84,6 +85,8 @@ body {
   color: $color-2;
 }
 
+// ---------------Heading Primary---------------
+
 .heading-primary {
   color: $color-1;
   margin-bottom: 1rem;
@@ -113,13 +116,14 @@ body {
   }
 
   &__icon-box {
-    margin-top: 0.3rem;
+    padding-top: 0.4rem;
     font-size: 4rem;
     // parent was block so inherited block display... needed to be inline block
     display: inline-block;
   }
 }
 
+// ---------------Heading Secondary---------------
 .heading-secondary {
   color: $color-1;
   font-size: 3rem;
@@ -159,6 +163,48 @@ body {
   //   background-color: rgba($color-1, 0.1);
   // }
 }
+
+// ---------------Icons---------------
+.icon {
+  height: 5rem;
+  width: 5rem;
+  fill: $color-2-dark;
+  transition: all 0.4s;
+  overflow: hidden;
+  //Stops the stuttering from happening on icon transitions
+  backface-visibility: hidden;
+
+  &__resume,
+  &__linkedin,
+  &__github {
+    &:hover {
+      cursor: pointer;
+      fill: $color-1;
+      transform: translateY(-0.3rem);
+    }
+  }
+
+  &__projects {
+    fill: $color-1;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  &__footer {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.4s;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.3rem) scale(1.2);
+    }
+  }
+}
+
+// ---------------Headings---------------
 
 .heading {
   text-align: center;

@@ -65,8 +65,14 @@
 
   &__grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
+  }
+
+  &__skillBox {
+    &:not(:last-child) {
+      margin-right: 15rem;
+    }
   }
 }
 

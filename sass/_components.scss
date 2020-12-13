@@ -144,6 +144,7 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -181,5 +182,24 @@
     opacity: 0;
     transition: all 0.4s ease-in-out;
     transform: translateY(-0.3rem);
+  }
+
+  &__text {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+    &--span {
+      display: inline-block;
+      color: $color-3;
+      transition: all 0.3s;
+      padding: 0 0.5rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

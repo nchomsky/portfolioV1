@@ -155,9 +155,17 @@ body {
           transform: translateY(0.7rem);
 }
 
-.heading-secondary--section {
+.heading {
   text-align: center;
   margin-bottom: 10rem;
+}
+
+.heading--section {
+  display: inline-block;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  border-bottom: 0.1rem solid #f9f7f7;
 }
 
 .heading-tertiary {
@@ -242,6 +250,19 @@ body {
   background-color: rgba(249, 247, 247, 0.1);
 }
 
+.about__container {
+  max-width: 100rem;
+  min-width: 50%;
+  margin: 0 auto;
+  min-height: 60%;
+  background-color: #f9f7f7;
+  color: black;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
 .skills__skillBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,13 +342,22 @@ body {
 }
 
 .section-about {
-  height: 75vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(219, 226, 239, 0.4)), to(rgba(219, 226, 239, 0.4))), url(/img/rmnp-2.jpg);
-  background-image: linear-gradient(to right bottom, rgba(219, 226, 239, 0.4), rgba(219, 226, 239, 0.4)), url(/img/rmnp-2.jpg);
+  height: 80vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(219, 226, 239, 0.4)), to(rgba(219, 226, 239, 0.4))), url(/img/rmnp.jpg);
+  background-image: linear-gradient(to right bottom, rgba(219, 226, 239, 0.4), rgba(219, 226, 239, 0.4)), url(/img/rmnp.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-skills {

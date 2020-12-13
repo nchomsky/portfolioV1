@@ -30,17 +30,20 @@
 // About Section
 
 .section-about {
-  height: 75vh;
+  height: 80vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-2, 0.4),
       rgba($color-2, 0.4)
     ),
-    url(/img/rmnp-2.jpg);
+    url(/img/rmnp.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 //////////////////////////////////
@@ -50,9 +53,9 @@
   background-color: $color-3;
   padding: 10rem 0;
   overflow: hidden;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 .skills {

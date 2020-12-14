@@ -337,8 +337,9 @@ body {
 }
 
 .li {
+  color: #777;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 1rem 2rem;
   width: 100%;
   -webkit-transition: all 0.5s;
@@ -353,6 +354,38 @@ body {
 .li:hover {
   color: #dbe2ef;
   background-color: #112d4e;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30rem)[1];
+      grid-template-rows: repeat(1, 30rem);
+  -ms-grid-columns: (39rem)[1];
+      grid-template-columns: repeat(1, 39rem);
+}
+
+.projects .item:hover {
+  cursor: pointer;
+}
+
+.projects .item--1 {
+  border: 0.1rem solid #999;
+  background-size: 100rem;
+  background-position: top;
+  background-image: url(/img/project-rps.JPG);
 }
 
 .footer {
@@ -406,8 +439,8 @@ body {
   left: 0;
   background-color: #f9f7f7;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translateY(-0.3rem);
           transform: translateY(-0.3rem);
 }
@@ -482,6 +515,8 @@ body {
 
 .section-skills {
   background-color: #3f72af;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f72af), to(#dbe2ef));
+  background-image: linear-gradient(to bottom, #3f72af, #dbe2ef);
   padding: 10rem 0;
   padding-bottom: 12rem;
   overflow: hidden;

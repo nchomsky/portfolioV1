@@ -227,6 +227,14 @@ body {
       border-bottom: 0.1rem solid $color-4;
     }
   }
+
+  &--popup {
+    color: $color-3;
+    font-size: 3rem;
+    font-family: Montserrat;
+    border-bottom: 0.1rem solid $color-3;
+    font-weight: 300;
+  }
 }
 
 .heading-tertiary {

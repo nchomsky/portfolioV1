@@ -17,6 +17,7 @@ function closeModal(e) {
 }
 
 function openModal() {
-    modal.style.visibility = "";
+    console.log("button click");
+    modal.style.visibility = "visible";
     modal.style.opacity = 1;
 }

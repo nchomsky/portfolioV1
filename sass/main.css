@@ -505,7 +505,7 @@ body {
   position: fixed;
   z-index: 9999;
   opacity: 0;
-  visibility: "hidden";
+  visibility: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: -webkit-box;

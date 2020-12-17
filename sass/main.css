@@ -767,6 +767,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 37.5em) {
+  .header__button-box {
+    bottom: 4rem;
+  }
+}
+
 .section-about {
   height: 80vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(219, 226, 239, 0.4)), to(rgba(219, 226, 239, 0.4))), url(/img/rmnp.jpg);

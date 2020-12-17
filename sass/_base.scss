@@ -1,6 +1,60 @@
 // This file contains resets, variables, mixins, animations, etc.
 
 //////////////////////////////////
+// Breakpoints
+
+// Media Query Manager
+// 0-600px phone
+// 600-900px tablet(portrait)
+//900-1200px tablet(landscacpe)
+//1800px+ big desktop
+
+/*
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + typography > general Layout > grid > page layout > components
+
+*/
+// rem's and em's not effected by root font size setting in media queries
+// em's best option for media queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //600px / 16px(default font-size) = 37.5em
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  // @if $breakpoint == tab-land-small {
+  //   @media (max-width: 66em) {
+  //     @content;
+  //   } //1056px
+  // }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == small-desktop {
+    @media (max-width: 82.375em) {
+      @content;
+    } //1318px
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}
+
+//////////////////////////////////
 // Resets
 
 *,
@@ -14,6 +68,32 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  // larger media queries go before the smaller ones when dealing with max width
+
+  @include respond(small-desktop) {
+    // width < 1318?
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 50%; //1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 40%; //1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) {
+    // width < 600
+    font-size: 30%;
+  }
+
+  // @include respond(big-desktop) {
+  //   font-size: 75%; //1rem = 12, 12/16 = 75%
+  // }
 }
 
 body {
@@ -234,6 +314,15 @@ body {
     font-family: Montserrat;
     border-bottom: 0.1rem solid $color-3;
     font-weight: 300;
+  }
+
+  &--about {
+    font-size: 6rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-4;
+    border-bottom: 0.1rem solid $color-4;
   }
 }
 

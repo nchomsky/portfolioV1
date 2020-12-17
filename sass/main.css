@@ -1,3 +1,13 @@
+/*
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + typography > general Layout > grid > page layout > components
+
+*/
 *,
 *::after,
 *::before {
@@ -10,6 +20,30 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+
+@media (max-width: 82.375em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
 }
 
 body {
@@ -225,6 +259,15 @@ body {
   font-weight: 300;
 }
 
+.heading--about {
+  font-size: 6rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #112d4e;
+  border-bottom: 0.1rem solid #112d4e;
+}
+
 .heading-tertiary {
   color: #333;
   font-size: 3.5rem;
@@ -344,16 +387,22 @@ body {
 }
 
 .about__container {
-  max-width: 100rem;
+  max-width: 90rem;
   min-width: 50%;
   margin: 0 auto;
   min-height: 60%;
+  max-height: 50rem;
   background-color: #f9f7f7;
   color: black;
   border-radius: 0.7rem;
   -webkit-box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1.25rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
+}
+
+.about__title {
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .skills__skillBox {
@@ -711,7 +760,7 @@ body {
 
 .header__button-box {
   position: absolute;
-  bottom: 15%;
+  bottom: 2rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -754,16 +803,47 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.skills__skillBox:not(:last-child) {
-  margin-right: 15rem;
+@media (max-width: 82.375em) {
+  .skills__grid {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .skills__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 82.375em) {
+  .skills__skillBox:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .skills__skillBox:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 
 .section-projects {

@@ -19,7 +19,7 @@
 
   &__button-box {
     position: absolute;
-    bottom: 15%;
+    bottom: 2rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -68,13 +68,32 @@
 
   &__grid {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: flex-start;
+    justify-content: space-evenly;
+
+    @include respond(small-desktop) {
+      justify-content: space-evenly;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__skillBox {
     &:not(:last-child) {
-      margin-right: 15rem;
+      // margin-right: 15rem;
+
+      @include respond(small-desktop) {
+        margin-right: 0;
+      }
+
+      @include respond(phone) {
+        margin-bottom: 3rem;
+      }
     }
   }
 }

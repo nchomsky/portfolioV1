@@ -9,18 +9,6 @@
 //900-1200px tablet(landscacpe)
 //1800px+ big desktop
 
-/*
-$breakpoint argument choices:
--phone
--tab-port
--tab-land
--big-desktop
-
-ORDER: Base + typography > general Layout > grid > page layout > components
-
-*/
-// rem's and em's not effected by root font size setting in media queries
-// em's best option for media queries
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {

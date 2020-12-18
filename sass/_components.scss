@@ -116,7 +116,7 @@
     min-width: 50%;
     margin: 0 auto;
     min-height: 60%;
-    max-height: 50rem;
+    max-height: 70rem;
     background-color: $color-1;
     color: black;
     border-radius: 0.7rem;
@@ -127,6 +127,14 @@
   &__title {
     text-align: center;
     margin-top: 3rem;
+  }
+
+  &__text {
+    margin: 3rem 7rem;
+
+    &--first {
+      margin-bottom: 3rem;
+    }
   }
 }
 

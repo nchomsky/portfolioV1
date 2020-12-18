@@ -309,8 +309,8 @@ body {
     display: inline-block;
     text-transform: uppercase;
     font-weight: 300;
-    color: $color-4;
-    border-bottom: 0.1rem solid $color-4;
+    color: $color-3;
+    border-bottom: 0.1rem solid $color-3;
   }
 }
 
@@ -318,4 +318,20 @@ body {
   color: $color-grey-dark-3;
   font-size: 3.5rem;
   font-weight: 300;
+}
+
+// ---------------About Secction Text---------------
+
+.about {
+  &__text {
+    font-family: Lato;
+    font-weight: 400;
+    // color-grey-dark-3 also could be good
+    color: $color-grey-dark;
+    font-size: 2.5rem;
+
+    span {
+      color: $color-3;
+    }
+  }
 }

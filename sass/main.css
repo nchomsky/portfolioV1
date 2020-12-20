@@ -756,6 +756,20 @@ body {
   font-weight: 400;
 }
 
+.popup__x {
+  font-size: 2.5rem;
+  color: #3f72af;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 3.2rem;
+  margin-right: 2.1rem;
+}
+
+.popup__x:hover {
+  color: #112d4e;
+  cursor: pointer;
+}
+
 .header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#112d4e), to(#3f72af));

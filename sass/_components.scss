@@ -418,4 +418,17 @@
       font-weight: 400;
     }
   }
+
+  &__x {
+    font-size: 2.5rem;
+    color: $color-3;
+    align-self: flex-end;
+    margin-top: 3.2rem;
+    margin-right: 2.1rem;
+
+    &:hover {
+      color: $color-4;
+      cursor: pointer;
+    }
+  }
 }

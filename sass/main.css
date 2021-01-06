@@ -483,8 +483,18 @@ body {
   display: grid;
   -ms-grid-rows: (30rem)[1];
       grid-template-rows: repeat(1, 30rem);
-  -ms-grid-columns: (39rem)[1];
-      grid-template-columns: repeat(1, 39rem);
+  -ms-grid-columns: (39rem)[2];
+      grid-template-columns: repeat(2, 39rem);
+  grid-gap: 0.5rem;
+}
+
+@media (max-width: 56.25em) {
+  .projects__container {
+    -ms-grid-rows: (30rem)[2];
+        grid-template-rows: repeat(2, 30rem);
+    -ms-grid-columns: (39rem)[1];
+        grid-template-columns: repeat(1, 39rem);
+  }
 }
 
 .projects__button {
@@ -530,6 +540,14 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-image: url(/img/project-rps.JPG);
+}
+
+.projects .item--2 {
+  border: 0.1rem solid #999;
+  background-size: 51rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/project-ft.JPG);
 }
 
 .footer {
@@ -768,6 +786,10 @@ body {
 .popup__x:hover {
   color: #112d4e;
   cursor: pointer;
+}
+
+.popup__x--2 {
+  margin-top: 11.2rem;
 }
 
 .header {

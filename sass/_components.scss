@@ -202,8 +202,13 @@
   &__container {
     display: grid;
     grid-template-rows: repeat(1, 30rem);
-    grid-template-columns: repeat(1, 39rem);
-    // grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 39rem);
+    grid-gap: 0.5rem;
+
+    @include respond(tab-port) {
+      grid-template-rows: repeat(2, 30rem);
+      grid-template-columns: repeat(1, 39rem);
+    }
   }
 
   &__button {
@@ -238,6 +243,14 @@
       background-repeat: no-repeat;
       background-position: top;
       background-image: url(/img/project-rps.JPG);
+    }
+
+    &--2 {
+      border: 0.1rem solid $color-grey-dark-2;
+      background-size: 51rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(/img/project-ft.JPG);
     }
   }
 }
@@ -429,6 +442,10 @@
     &:hover {
       color: $color-4;
       cursor: pointer;
+    }
+
+    &--2 {
+      margin-top: 11.2rem;
     }
   }
 }

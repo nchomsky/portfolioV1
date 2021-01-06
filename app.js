@@ -1,26 +1,25 @@
-const modal = document.querySelector('.popup');
 
-const button = document.querySelector('.btn--projects');
-const closeButton = document.querySelector('.close');
+const buttons = document.getElementsByClassName("btn--projects");
+const buttonsArray = Array.from(buttons).entries();
+const modals = document.getElementsByClassName("popup");
+const closeButtons = document.getElementsByClassName("close");
 
-button.addEventListener('click', openModal);
-closeButton.addEventListener('click', closeModal);
-
-//Listen for click on window
-window.addEventListener('click', closeModal);
-
-// Function to close modal
-function closeModal(e) {
-    console.log(e);
-    if (e.target === modal || e.target === closeButton) {
-        modal.style.visibility = "hidden";
-        modal.style.opacity = 0;
-    }
-
-}
-
-function openModal() {
-    console.log("button click");
-    modal.style.visibility = "visible";
-    modal.style.opacity = 1;
+for (let [index, buttons] of buttonsArray) {
+    const showModal = () => {
+        modals[index].style.visibility = "visible";
+        modals[index].style.opacity = 1;
+    };
+    const hideModal = (e) => {
+        if (e.target === modals[index]) {
+            modals[index].style.visibility = "hidden";
+            modals[index].style.opacity = 0;
+        }
+    };
+    const closeModal = () => {
+        modals[index].style.visibility = "hidden";
+        modals[index].style.opacity = 0;
+    };
+    buttons.addEventListener("click", showModal);
+    closeButtons[index].addEventListener("click", closeModal);
+    window.addEventListener('click', hideModal);
 }

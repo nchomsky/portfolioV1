@@ -800,6 +800,10 @@ body {
   margin-top: 11.2rem;
 }
 
+.popup__x--3 {
+  margin-top: 12rem;
+}
+
 .header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#112d4e), to(#3f72af));
